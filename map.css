@@ -16,12 +16,35 @@ h6{
   font-weight: 300;
 }
 
-li{
-  margin-right: 50px;
+.topnavi{
+    padding: 1%;
+    position: -webkit-sticky;
+   /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+   /* Ensure it stays on top of other content */
+    background-color: black;
 }
-
-li:hover{
-  background-color: #0569b9;
+.topnavi li {
+    padding: 5%;
+    width: 250px;
+    display: inline;
+    text-align: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    font-size: x-large;
+}
+.topnavi a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+.topnavi:hover a {
+    background: #6f6fff;
+    color: white;
+}
+li {
+    color: antiquewhite;
 }
 
 .wrapper{
