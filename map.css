@@ -42,10 +42,6 @@ h6{
     color: antiquewhite;
 }
 
-li:hover{
-  background-color: #0569b9;
-}
-
 .wrapper{
   display: flex;
   flex-direction: row;
