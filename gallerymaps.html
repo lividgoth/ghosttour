@@ -12,20 +12,62 @@
     <script src="hamburger.js"></script>
 </head>
 <body>
-  <div class="topnavi-container">
-         <ul class="topnavi">
-            <li class="page"><strong><a id="homebutton" href="index.html">TGT</a></strong></li>
-            <li class="page"><a href="booking.html">Booking</a></li>
-            <li class="page"><a href="about.html">About</a></li>
-            <li class="page"><a href="gallerymaps.html">Gallery</a></li>
-            <li class="page"><a href="gift.html">Giftshop</a></li>
-            <li class="page"><a href="contact.html">Contact</a></li>
-         </ul>
+ <!--Navbar-->
+  <div class="navbar-fixed"><!--let the nav bar stay in the top when we slide down-->
+    <nav class="black"><!--nav bar color is black-->
+      <div class="container"><!--push everything to the middle-->
+        <div class="nav-wapper">
+          <div class="brand-square">
+          <a href="#" class="brand-logo">TGT</a>
+          </div>
+          <a href="index.html" class="sidenav-trigger" data-target = "mobile-nav">
+            <i class="material-icons">menu</i><!--burger icon-->
+          </a>
+          <ul class="right hide-on-med-and-down"><!--hide this menu when screen is on the medium or lower-->
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="booking.html">Book</a>
+            </li>
+            <li>
+              <a href="gallerymaps.html">Gallery/Maps</a>
+            </li>
+            <li>
+              <a href="gift.html">Gift Shop</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  </div>
 
-    
+  <!--sidebar lists-->
+  <ul class="sidenav" id="mobile-nav"><!--data target :mobile-nav-->
+    <li>
+      <a href="#about">About</a>
+    </li>
+    <li>
+      <a href="#book">Book</a>
+    </li>
+    <li>
+      <a href="#gallerymaps">Gallery/Maps</a>
+    </li>
+    <li>
+      <a href="#gift">Gift Shop</a>
+    </li>
+    <li>
+      <a href="#contact">Contact us</a>
+    </li>
+  </ul>
+
+
   <!--section: map and routes-->
   <div class="wrapper">
+
     <div class="left">
       <div class="map">
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.9624715307573!2d-6.256352590297591!3d53.34392798223011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9b2dc78edd%3A0x2700fe0d8c716167!2sTrinity%20College%20Dublin!5e0!3m2!1sen!2sie!4v1709405364468!5m2!1sen!2sie" width="900" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -242,7 +284,11 @@
   <!--JavaScript at end of body for optimized loading-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-  <script>      
+  <script>
+    //click the burger icon then display the sidebar
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav,{});//use materialize javascript library, initialize the sidenav
+
     //material boxed
     const mb = document.querySelectorAll('.materialboxed');
     M.Materialbox.init(mb,{});
