@@ -16,6 +16,14 @@ h6{
   font-weight: 300;
 }
 
+li{
+  margin-right: 50px;
+}
+
+li:hover{
+  background-color: #0569b9;
+}
+
 
 .wrapper{
   display: flex;
