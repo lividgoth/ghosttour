@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Tour</title>
+
+
+
+    <!--Icons from Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    
+    <!--Style Sheet-->
+   
+    <link rel="stylesheet" href="book2style.css"/>
+
+
+</head>
+<body>
+    <body>
+      <!-- Top Navigation Menu -->
+      <div class="topnavi-container">
+         <ul class="topnavi">
+            <li class="page"><strong><a id="homebutton" href="index.html">TGT</a></strong></li>
+            <li class="page"><a href="booking.html">Booking</a></li>
+            <li class="page"><a href="about.html">About</a></li>
+            <li class="page"><a href="gallerymaps.html">Gallery</a></li>
+            <li class="page"><a href="gift.html">Giftshop</a></li>
+            <li class="page"><a href="contact.html">Contact</a></li>
+         </ul>
+      </div>
+      <div class="pageTitle">
+        <h1>Book Here</h1>
+      </div>
+      <div class="wrapper">
+        <div class="title">Start Booking</div>
+
+        <div class="bookingContent">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="First Name">
+                    </div>
+                    <div class="input-box">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <div class="input-box">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="input-box">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email Address">
+                    </div>
+                </div>
+
+
+                <div class="date-time">
+                    <div class="col">
+                      <span>Date</span>
+                        <div class="inputs">
+                        <input type="date" />
+                        
+                        </div>  
+                         
+                    </div>
+                    <div class="col">
+                        <span>Time</span>
+                          <div class="inputs">
+                          <input type="time" />
+                          </div>  
+                           
+                      </div>
+                    
+        
+                </div>
+                <div class="row">
+                    <div class="box">
+                      <select>
+                        <option value="num-of-adults" selected disabled>No of Adults</option>
+                        <option value="1">1 Adults</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                        <option value="5">5 Adults</option>
+                        <option value="6">6 Adults</option>
+                      </select>
+                    </div>
+                    <div class="box">
+                      <select>
+                        <option value="num-of-Children" selected disabled>No of Children</option>
+                        <option value="1">1 Children</option>
+                        <option value="2">2 Children</option>
+                        <option value="3">3 Children</option>
+                        <option value="4">4 Children</option>
+                        <option value="5">5 Children</option>
+                        <option value="6">6 Children</option>
+                      </select>
+                    </div>
+
+                    <div class="box">
+                        <select>
+                          <option value="accessibilityAccommodations" selected disabled>Accessibility Accommodations</option>
+                          <option value="none">No accommodations needed</option>
+                          <option value="wheelchair">Wheelchair accessibility</option>
+                          <option value="hearing">Hearing assistance</option>
+                          <option value="vision">Vision assistance</option>
+                          <option value="mobility">Mobility assistance</option>
+                          <option value="other">Other (please specify in comments)</option>
+                        </select>
+                      </div>
+                      <div class="box">
+                        <select>
+                          <option value="language-select" selected disabled>Options for Audio Guide Language</option>
+                          <option value="en">English</option>
+                          <option value="es">Español</option>
+                          <option value="fr">Français</option>
+                          <option value="de">Deutsch</option>
+                          <option value="it">Italiano</option>
+                          <option value="ja">日本語</option>
+                          <option value="zh">中文</option>
+                          <option value="ko">한국어</option>
+                          <option value="ar">العربية</option>
+                          <option value="ru">Русский</option>
+                        </select>
+                      </div>
+                    </div>
+                      <textarea id="comments" placeholder="Additional Information"></textarea>
+                    
+             <button id="submit-btn">Book Now</button>
+            </form>
+           
+        </div>
+      </div>
+     <!-- Additional Information Section -->
+     <div class="second-container">
+        <h2>Know Before You Go</h2>
+        <ul>
+           <li>Bring comfortable shoes</li>
+           <li>Prepare for rain!</li>
+           <li>etc, etc, ect</li>
+        </ul>
+     </div>
+     <div class="second-container">
+        <h2>Know Before You Go</h2>
+        <ul>
+           <li>Bring comfortable shoes</li>
+           <li>Prepare for rain!</li>
+           <li>etc, etc, ect</li>
+        </ul>
+     </div>
+</body>
+</html>
