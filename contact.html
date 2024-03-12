@@ -94,3 +94,25 @@
         </div>
     </div>
 </div>
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    //click the burger icon then display the sidebar
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav,{});//use materialize javascript library, initialize the sidenav
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var brandLogoLink = document.querySelector('.brand-logo');
+    if (brandLogoLink) {
+        brandLogoLink.addEventListener('click', function(event) {
+            // This checks if the default behavior has been prevented
+            // If not, it allows the link to proceed normally
+            if (!event.defaultPrevented) {
+                window.location.href = this.getAttribute('href');
+            }
+        }, false);
+    }
+});
+</body>
+</html>
