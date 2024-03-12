@@ -16,7 +16,6 @@ p, h1,h2 {
     color: antiquewhite;
 }
 /* begin top navigation */
-/*
 .topnavi{
     padding: 1%;
     position: -webkit-sticky;
@@ -47,11 +46,7 @@ p, h1,h2 {
 li {
     color: antiquewhite;
 }
-*/
 /* end top navigation */
-li{
-  margin-right: 50px;
-}
 /* home page sections, from left to right */
 .container {
     display: flex;
