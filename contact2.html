@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <script src="https://kit.fontawesome.com/b7c5aa831b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav class="black">
+      <div class="container">
+        <div class="nav-wapper">
+          <div class="brand-square">
+          <a href="index.html" class="brand-logo">TGT</a>
+          </div>
+          <a href="#" class="sidenav-trigger" data-target = "mobile-nav">
+            <i class="material-icons">menu</i><!--burger icon-->
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="booking.html">Book</a>
+            </li>
+            <li>
+              <a href="gallerymaps.html">Gallery/Maps</a>
+            </li>
+            <li>
+              <a href="gift.html">Gift Shop</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!--sidebar lists-->
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <a href="about.html">About</a>
+    </li>
+    <li>
+      <a href="booking.html">Book</a>
+    </li>
+    <li>
+      <a href="gallerymaps.html">Gallery/Maps</a>
+    </li>
+    <li>
+      <a href="gift.html">Gift Shop</a>
+    </li>
+    <li>
+      <a href="contact.html">Contact us</a>
+    </li>
+  </ul>
+<div class="contactus">
+    <div class="column column-2">
+        <div id="booking-cal">
+            <p id="book-text">We'd love to hear about your experience.</p>
+            <div id="calendar"></div>
+            <!-- date -->
+            <label for="date"> When was your tour?  </label><input type="date" id="test" />
+            <br><br>
+            <br><br>
+            <!-- user input -->
+            <!-- dropdown -->
+            <label for="label">DROPDOWN OPTIONS</label>
+            <select name="title">
+                <option value="">--Please select an option--</option>
+                <option value="NAME">OPTION</option>
+                <option value="NAME">OPTION</option>
+                <option value="NAME">OPTION</option>
+                <option value="NAME">OPTION</option>
+                <option value="NAME">OPTION</option>
+                <option value="NAME">OPTION</option>
+            </select>
+            <br><br>
+            <br><br>
+            <!-- text input -->
+            <textarea id="email" placeholder="Email"></textarea>
+            <br><br>
+            <br><br>
+            <textarea id="OTHER" placeholder="OTHER"></textarea>
+            <textarea id="comments" placeholder="Anything else we should know?"></textarea>
+
+            <!-- submit -->
+            <button id="submit-btn">Send message</button>
+          </div>
+        </div>
+    </div>
+</div>
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    //click the burger icon then display the sidebar
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav,{});//use materialize javascript library, initialize the sidenav
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var brandLogoLink = document.querySelector('.brand-logo');
+    if (brandLogoLink) {
+        brandLogoLink.addEventListener('click', function(event) {
+            // This checks if the default behavior has been prevented
+            // If not, it allows the link to proceed normally
+            if (!event.defaultPrevented) {
+                window.location.href = this.getAttribute('href');
+            }
+        }, false);
+    }
+});
+</script>
+</body>
+</html>
