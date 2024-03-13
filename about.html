@@ -3,24 +3,64 @@
    <head>
       <title>About</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="style.css">
-      <script src="cal.js"></script>
-      <script src="hamburger.js"></script>
+      <link rel="stylesheet" href="style2.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+      <script src="https://kit.fontawesome.com/b7c5aa831b.js" crossorigin="anonymous"></script>
    </head>
    <body>
-      <!-- this part is the top navigation menu, should be the same on every page! -->
-      <div class="topnavi-container">
-         <ul class="topnavi">
-            <li class="page"><strong><a id="homebutton" href="index.html">TGT</a></strong></li>
-            <li class="page"><a href="booking.html">Booking</a></li>
-            <li class="page"><a href="about.html">About</a></li>
-            <li class="page"><a href="gallerymaps.html">Gallery</a></li>
-            <li class="page"><a href="gift.html">Giftshop</a></li>
-            <li class="page"><a href="contact.html">Contact</a></li>
-         </ul>
-      </div>
+    <div class="navbar-fixed">
+      <nav class="black">
+        <div class="container">
+          <div class="nav-wapper">
+            <div class="brand-square">
+            <a href="index.html" class="brand-logo">TGT</a>
+            </div>
+            <a href="#" class="sidenav-trigger" data-target = "mobile-nav">
+              <i class="material-icons">menu</i><!--burger icon-->
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="booking.html">Book</a>
+              </li>
+              <li>
+                <a href="gallerymaps.html">Gallery/Maps</a>
+              </li>
+              <li>
+                <a href="gift.html">Gift Shop</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  
+    <!--sidebar lists-->
+    <ul class="sidenav" id="mobile-nav">
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="booking.html">Book</a>
+      </li>
+      <li>
+        <a href="gallerymaps.html">Gallery/Maps</a>
+      </li>
+      <li>
+        <a href="gift.html">Gift Shop</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact us</a>
+      </li>
+    </ul>
       <!-- edit the first section -->
-      <div class="container">
+      <div class="container-title">
          <div class="pages-title">
             <h1 class="pages-titletext">About TGT</h1>
          </div>
@@ -64,5 +104,27 @@
             </div>
          </div>
       </div>
-   </body>
+
+        <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    //click the burger icon then display the sidebar
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav,{});//use materialize javascript library, initialize the sidenav
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var brandLogoLink = document.querySelector('.brand-logo');
+    if (brandLogoLink) {
+        brandLogoLink.addEventListener('click', function(event) {
+            // This checks if the default behavior has been prevented
+            // If not, it allows the link to proceed normally
+            if (!event.defaultPrevented) {
+                window.location.href = this.getAttribute('href');
+            }
+        }, false);
+    }
+});
+</script>
+</body>
 </html>
