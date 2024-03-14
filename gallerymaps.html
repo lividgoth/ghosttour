@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Gallery & Maps</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
   <script src="https://kit.fontawesome.com/b7c5aa831b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="map.css">
+  <title>Gallery & Maps</title>
 </head>
 <body>
-  <div class="navbar-fixed">
-    <nav class="black">
-      <div class="container">
+  <!--Navbar-->
+  <div class="navbar-fixed"><!--let the nav bar stay in the top when we slide down-->
+    <nav class="black"><!--nav bar color is black-->
+      <div class="container"><!--push everything to the middle-->
         <div class="nav-wapper">
           <div class="brand-square">
           <a href="index.html" class="brand-logo">TGT</a>
           </div>
-          <a href="#" class="sidenav-trigger" data-target = "mobile-nav">
+          <a href="index.html" class="sidenav-trigger" data-target = "mobile-nav">
             <i class="material-icons">menu</i><!--burger icon-->
           </a>
-          <ul class="right hide-on-med-and-down">
+          <ul class="right hide-on-med-and-down"><!--hide this menu when screen is on the medium or lower-->
             <li>
               <a href="about.html">About</a>
             </li>
@@ -42,21 +44,21 @@
   </div>
 
   <!--sidebar lists-->
-  <ul class="sidenav" id="mobile-nav">
+  <ul class="sidenav" id="mobile-nav"><!--data target :mobile-nav-->
     <li>
-      <a href="about.html">About</a>
+      <a href="#about">About</a>
     </li>
     <li>
-      <a href="booking.html">Book</a>
+      <a href="#book">Book</a>
     </li>
     <li>
-      <a href="gallerymaps.html">Gallery/Maps</a>
+      <a href="#gallerymaps">Gallery/Maps</a>
     </li>
     <li>
-      <a href="gift.html">Gift Shop</a>
+      <a href="#gift">Gift Shop</a>
     </li>
     <li>
-      <a href="contact.html">Contact us</a>
+      <a href="#contact">Contact us</a>
     </li>
   </ul>
 
@@ -120,8 +122,8 @@
           <p class="introduction">
             Accompanied by an English-speaking guide, your experience will be both enlightening and chilling, as you uncover the stories and secrets that haunt our beloved institution. 
           </p>
-          <a href="" class="lk">learn more</a><br>
-          <a href="" class="btn">BOOK NOW</a>
+          <a href="about.html" class="lk">learn more</a><br>
+          <a href="booking.html" class="btn">BOOK NOW</a>
         </div>
       </div>
     </div>
@@ -136,8 +138,8 @@
           <p class="introduction">
             Accompanied by an English-speaking guide, your experience will be both enlightening and chilling, as you uncover the stories and secrets that haunt our beloved institution. 
           </p>
-          <a href="#" class="lk">learn more</a><br>
-          <a href="" class="btn">BOOK NOW</a>
+          <a href="about.html" class="lk">learn more</a><br>
+          <a href="booking.html" class="btn">BOOK NOW</a>
         </div>
       </div>
     </div>
@@ -152,8 +154,8 @@
           <p class="introduction">
             Accompanied by an English-speaking guide, your experience will be both enlightening and chilling, as you uncover the stories and secrets that haunt our beloved institution. 
           </p>
-          <a href="" class="lk">learn more</a><br>
-          <a href="" class="btn">BOOK NOW</a>
+          <a href="about.html" class="lk">learn more</a><br>
+          <a href="booking.html" class="btn">BOOK NOW</a>
         </div>
       </div>
     </div>
@@ -246,7 +248,7 @@
     </header>
     <div class="share">
       <p>
-        <strong>Share</strong><br>your experience on social media <br>to win award <br>from Trinity Gift Shop
+        <strong>Share</strong><br>your experience on social media <br>to win award <br>from <a href="gift.html">Trinity Gift Shop</a>
       </p>
     </div>
     <div class="video">
@@ -263,7 +265,7 @@
     <div class="footer-left">
       <span>Recieve <br>our <br>Newsletters</span>
       <div class="about">
-        <a href="#">About us</a>
+        <a href="about.html">About us</a>
       </div>
     </div>
     <div class="footer-right">
@@ -288,20 +290,6 @@
     //material boxed
     const mb = document.querySelectorAll('.materialboxed');
     M.Materialbox.init(mb,{});
-
-      document.addEventListener('DOMContentLoaded', function() {
-    var brandLogoLink = document.querySelector('.brand-logo');
-    if (brandLogoLink) {
-        brandLogoLink.addEventListener('click', function(event) {
-            // This checks if the default behavior has been prevented
-            // If not, it allows the link to proceed normally
-            if (!event.defaultPrevented) {
-                window.location.href = this.getAttribute('href');
-            }
-        }, false);
-    }
-});
-
 
   </script>
 
