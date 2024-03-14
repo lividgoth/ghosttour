@@ -1,0 +1,159 @@
+
+
+.gift-item {
+    width: calc(25% - 20px); /* Make each item take up one-fourth of the container's width */
+    background-color: rgba(0, 0, 0, 0.3); /* Set background color with 30% transparency */
+    border-radius: 2px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding and border in the width */
+    text-align: center; /* Center content horizontally */
+}
+
+
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/background.jpeg'); /* Specify the path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    color: #fccc64; /* Set text color to white */
+}
+
+.top-menu {
+    text-align: right;
+}
+
+.top-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu ul li {
+    display: inline-block;
+    margin-left: 0.0001px;
+}
+
+.top-menu ul li:first-child {
+    margin-left: 0;
+}
+
+.top-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.top-menu ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Add this CSS to your existing style.css file */
+
+.container {
+    max-width: 120px; /* Adjust container width as needed */
+    margin: 2px auto;
+    padding: 0 2px;
+    overflow: hidden; /* Clear floats */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Distribute items evenly */
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.gift-item {
+    width: calc(25% - 20px); /* Make each item take up one-fourth of the container's width */
+    background-color: #000000;
+    border-radius: 2px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding and border in the width */
+    text-align: center; /* Center content horizontally */
+}
+
+.gift-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.1px;
+    max-height: 1800px; /* Set maximum height for images */
+}
+
+.gift-item h2 {
+    margin-top: 0;
+}
+
+.gift-item p {
+    margin-bottom: 10px;
+}
+
+.gift-item button {
+    background-color: #333;
+    color: #f7f6f6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gift-item button:hover {
+    background-color: #555;
+}
+
+
+header {
+    background-color: #333;
+    color: #f9f6f6;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.gift-item {
+    width: calc(50% - 10px); /* Make each item take up half of the container's width */
+    background-color: #000000;
+    border-radius: 2px;
+    padding: 2px;
+    margin-bottom: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    float: left; /* Float the gift items to the left to make them appear in a row */
+    clear: none; /* Clear the float */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.gift-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gift-item h2 {
+    margin-top: 0;
+}
+
+.gift-item p {
+    margin-bottom: 10px;
+}
+
+.gift-item button {
+    background-color: #333;
+    color: #f7f6f6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gift-item button:hover {
+    background-color: #555;
+}
