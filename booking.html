@@ -4,31 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book a Tour</title>
-
+    <link rel="stylesheet" href="book2style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://kit.fontawesome.com/b7c5aa831b.js" crossorigin="anonymous"></script>
 
 
     <!--Icons from Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    
-    <!--Style Sheet-->
-   
-    <link rel="stylesheet" href="book2style.css"/>
-
-
 </head>
 <body>
-    <body>
-      <!-- Top Navigation Menu -->
-      <div class="topnavi-container">
-         <ul class="topnavi">
-            <li class="page"><strong><a id="homebutton" href="index.html">TGT</a></strong></li>
-            <li class="page"><a href="booking.html">Booking</a></li>
-            <li class="page"><a href="about.html">About</a></li>
-            <li class="page"><a href="gallerymaps.html">Gallery</a></li>
-            <li class="page"><a href="gift.html">Giftshop</a></li>
-            <li class="page"><a href="contact.html">Contact</a></li>
-         </ul>
+  <body>
+   <div class="navbar-fixed">
+    <nav class="black">
+      <div class="container">
+        <div class="nav-wapper">
+          <div class="brand-square">
+          <a href="index.html" class="brand-logo">TGT</a>
+          </div>
+          <a href="#" class="sidenav-trigger" data-target = "mobile-nav">
+            <i class="material-icons">menu</i><!--burger icon-->
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="booking.html">Book</a>
+            </li>
+            <li>
+              <a href="gallerymaps.html">Gallery/Maps</a>
+            </li>
+            <li>
+              <a href="gift.html">Gift Shop</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  </div>
+
+  <!--sidebar lists-->
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <a href="about.html">About</a>
+    </li>
+    <li>
+      <a href="booking.html">Book</a>
+    </li>
+    <li>
+      <a href="gallerymaps.html">Gallery/Maps</a>
+    </li>
+    <li>
+      <a href="gift.html">Gift Shop</a>
+    </li>
+    <li>
+      <a href="contact.html">Contact us</a>
+    </li>
+  </ul>
       <div class="pageTitle">
         <h1>Book Here</h1>
       </div>
@@ -71,15 +107,28 @@
                           <div class="inputs">
                           <input type="time" />
                           </div>  
-                           
                       </div>
-                    
+
+                      <div class="col">
+                        <span>Number of Adults</span>
+                          <div class="inputs">
+                          <input type="number" />
+                          </div>  
+                      </div>
+                      <div class="col">
+                        <span>Number of Children</span>
+                          <div class="inputs">
+                          <input type="number" />
+                          </div>  
+                      </div>
         
                 </div>
-                <div class="row">
+
+                <!-- 
+                <div class="row-box">
                     <div class="box">
                       <select>
-                        <option value="num-of-adults" selected disabled>No of Adults</option>
+                        <option value="num-of-adults" selected disabled>Number of Adults</option>
                         <option value="1">1 Adults</option>
                         <option value="2">2 Adults</option>
                         <option value="3">3 Adults</option>
@@ -127,6 +176,8 @@
                         </select>
                       </div>
                     </div>
+                    -->
+                      <textarea id="comments" placeholder="Accessibility Accommodations"></textarea>
                       <textarea id="comments" placeholder="Additional Information"></textarea>
                     
              <button id="submit-btn">Book Now</button>
@@ -151,5 +202,10 @@
            <li>etc, etc, ect</li>
         </ul>
      </div>
+     <script>document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+    });
+    </script>
 </body>
 </html>
