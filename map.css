@@ -21,9 +21,8 @@ li{
 }
 
 li:hover{
-  background-color: rgb(209, 179, 139);
+  background-color:  rgb(209, 179, 139);
 }
-
 
 .wrapper{
   display: flex;
@@ -45,6 +44,10 @@ li:hover{
 
 iframe{
   border-radius: 10px;
+}
+
+.choice-text{
+  color:#f6e8c3;
 }
 
 .right-route {
@@ -149,7 +152,7 @@ iframe{
 .first-route:hover,
 .second-route:hover,
 .third-route:hover {
-  border-color: #0569b9;
+  border-color: rgb(210, 177, 101);
   color:#ffffff;
 }
 
@@ -161,7 +164,7 @@ iframe{
   border: 0;
   border-radius: 2px;
   font-weight: 500;
-  background: #0569b9;
+  background: #E1C16E;
   color:white;
   text-decoration: none;
   cursor: pointer;
@@ -173,7 +176,7 @@ iframe{
 }
 
 .book-btn:hover {
-  background-color: rgb(147, 224, 255);
+  background-color: rgb(235, 213, 175);
 }
 
 /*photo section*/
@@ -209,16 +212,16 @@ h2{
   position: absolute;
   top: 120px;
   right: 10px;
-  color: rgb(53, 171, 255);
+  color: rgb(195, 155, 53);
 }
 
 .card .lk:hover{
-  color: #2d6e9d;
+  color:  rgb(235, 213, 175);
 }
 
 .card .btn{
   border-radius: 2px;
-  background: #0569b9;
+  background: #E1C16E;
   color:white;
   font-weight: bold;
   text-decoration: none;
@@ -230,7 +233,7 @@ h2{
 }
 
 .card .btn:hover{
-  background-color: rgb(147, 224, 255);
+  background-color:  rgb(235, 213, 175);
 }
 
 
@@ -292,9 +295,18 @@ h2{
 }
 
 .share strong{
-  color: #289eff;
+  color: #ffbf6c;
   font-weight: bold;
   font-size: 50px;
+}
+
+.share a{
+  color: #f7d87d;
+  text-decoration: underline;
+}
+
+.share a:hover{
+  color: #ffeebb;
 }
 
 .share p{
@@ -316,7 +328,7 @@ h2{
 .footer{
   display: flex;
   flex-direction: row;
-  background: #0569b9;
+  background: #E1C16E;
   height: 220px;
   margin-bottom: 20px;
 }
@@ -410,4 +422,3 @@ h2{
   }
 }
 */
-
